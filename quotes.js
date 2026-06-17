@@ -33,6 +33,18 @@ const QUOTES = [
     }
   }
 
+  {
+    lines: [
+      "This is a Test Quote.",
+      "With more than one line."
+    ],
+    attribution: {
+      author: "SomeoneElse",
+      year: "RightNow"
+    }
+  }
+
+
   /*
   Future quote using the default image:
 
