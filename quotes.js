@@ -10,21 +10,18 @@
   Omit attribution entirely when no credit should appear.
 */
 
+
 const QUOTES = [
   {
     lines: [
       "Welcome to The Library of Chaos.",
       "Please do not reshelve reality yourself."
     ],
-  attribution: [
-    author: "SeleneTheFirst",
-    year: "2026"
-    ]
+    attribution: {
+      author: "SeleneTheFirst",
+      year: "2026"
+    }
   }
-
-
-
-
 
   
   /*
