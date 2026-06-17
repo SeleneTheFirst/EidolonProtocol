@@ -1,6 +1,7 @@
 (() => {
   "use strict";
 
+  const bannerImage = document.querySelector(".banner-image");
   const quoteCard = document.querySelector("#quote");
   const quoteLines = document.querySelector("#quote-lines");
   const attribution = document.querySelector("#attribution");
@@ -22,6 +23,21 @@
 
   function normalizeIndex(index) {
     return (index + QUOTES.length) % QUOTES.length;
+  }
+
+  function renderImage(entry) {
+    const image = entry.image ?? DEFAULT_QUOTE_IMAGE;
+
+    if (!image?.src) {
+      bannerImage.hidden = true;
+      bannerImage.removeAttribute("src");
+      bannerImage.alt = "";
+      return;
+    }
+
+    bannerImage.hidden = false;
+    bannerImage.src = image.src;
+    bannerImage.alt = image.alt ?? "";
   }
 
   function renderAttribution(entry) {
@@ -51,24 +67,34 @@
       quoteLines.append(line);
     }
 
+    renderImage(entry);
     renderAttribution(entry);
+
     quoteCard.classList.remove("is-changing");
     void quoteCard.offsetWidth;
     quoteCard.classList.add("is-changing");
   }
 
-  function showPrevious() { renderQuote(currentIndex - 1); }
-  function showNext() { renderQuote(currentIndex + 1); }
+  function showPrevious() {
+    renderQuote(currentIndex - 1);
+  }
+
+  function showNext() {
+    renderQuote(currentIndex + 1);
+  }
 
   function showRandom() {
     if (QUOTES.length === 1) {
       renderQuote(0);
       return;
     }
+
     let nextIndex = currentIndex;
-    while (nextIndex === currentIndex) {
+
+    while (nextIndex == currentIndex) {
       nextIndex = Math.floor(Math.random() * QUOTES.length);
     }
+
     renderQuote(nextIndex);
   }
 

@@ -429,3 +429,67 @@ button {
     width: min(78vw, 1120px);
   }
 }
+
+/*
+  Eidolon Protocol v0.6 override
+  Append this block to the end of style.css.
+*/
+
+/*
+  The right column is content-sized:
+  natural banner height + fixed gap + quote card + controls.
+*/
+.right-column {
+  align-content: center;
+  gap: 14px;
+}
+
+.banner-frame {
+  max-height: none;
+}
+
+.banner-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+
+/*
+  The quote card no longer consumes a percentage of viewport height.
+  It stays at least 160px tall and grows only when its content requires it.
+*/
+.quote-card {
+  min-height: 160px;
+  height: auto;
+}
+
+/*
+  Keep spacing predictable even when banner dimensions vary.
+*/
+.quote-stage {
+  gap: 14px;
+}
+
+@media (max-width: 980px) {
+  .right-column,
+  .quote-stage {
+    gap: 14px;
+  }
+
+  .quote-card {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 540px) {
+  .right-column,
+  .quote-stage {
+    gap: 12px;
+  }
+
+  .quote-card {
+    min-height: 260px;
+  }
+}

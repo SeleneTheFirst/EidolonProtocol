@@ -1,15 +1,21 @@
 /*
+  DEFAULT_QUOTE_IMAGE is used whenever a quote does not provide its own image.
+
   Each quote requires:
     lines: one or more displayed lines
 
   Optional:
+    image.src
+    image.alt
     attribution.author
     attribution.source
     attribution.year
-
-  Omit attribution entirely when no credit should appear.
 */
 
+const DEFAULT_QUOTE_IMAGE = {
+  src: "assets/images/Logo_Eidolon_Systems_Wide-Name_Only.PNG",
+  alt: "Eidolon Systems"
+};
 
 const QUOTES = [
   {
@@ -17,32 +23,34 @@ const QUOTES = [
       "Welcome to The Library of Chaos.",
       "Please do not reshelve reality yourself."
     ],
+    image: {
+      src: "assets/images/The_Library_of_Chaos.png",
+      alt: "A misty symbolic landscape of history, technology, and CHAOS."
+    },
     attribution: {
       author: "SeleneTheFirst",
       year: "2026"
     }
   }
 
-  
   /*
-  Future one-line example:
+  Future quote using the default image:
 
   ,{
     lines: [
-      "A quotation that uses only one line."
+      "A short quote."
     ]
   }
 
-  Future attributed example:
+  Future quote with a custom image:
 
   ,{
     lines: [
-      "A quotation with attribution."
+      "Another short quote."
     ],
-    attribution: {
-      author: "Author Name",
-      source: "Source Title",
-      year: "2026"
+    image: {
+      src: "assets/images/Another_Banner.png",
+      alt: "A concise description of the banner."
     }
   }
   */
