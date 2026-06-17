@@ -31,7 +31,7 @@ const QUOTES = [
       author: "SeleneTheFirst",
       year: "2026"
     }
-  }
+  },
 
   {
     lines: [
