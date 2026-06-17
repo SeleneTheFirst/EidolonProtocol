@@ -15,9 +15,18 @@ const QUOTES = [
     lines: [
       "Welcome to The Library of Chaos.",
       "Please do not reshelve reality yourself."
+    ],
+  attribution: [
+    author: "SeleneTheFirst",
+    year: "2026"
     ]
   }
 
+
+
+
+
+  
   /*
   Future one-line example:
 
