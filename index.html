@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Eidolon Protocol">
+  <meta name="theme-color" content="#f4f2ee">
+  <title>Eidolon Protocol</title>
+  <link rel="icon" href="assets/eidolon-systems-logo.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="quotes.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="site-shell">
+    <header class="site-header">
+      <img class="site-logo" src="assets/eidolon-systems-logo.png" alt="Eidolon Systems">
+    </header>
+
+    <section class="quote-stage" aria-live="polite">
+      <blockquote id="quote" class="quote-card">
+        <div id="quote-lines" class="quote-lines"></div>
+        <footer id="attribution" class="quote-attribution" hidden>
+          <span id="author"></span><cite id="source"></cite>
+        </footer>
+      </blockquote>
+
+      <nav class="quote-controls" aria-label="Quote controls">
+        <button id="previous-quote" type="button" aria-label="Previous quote">←</button>
+        <button id="random-quote" type="button">Random</button>
+        <button id="next-quote" type="button" aria-label="Next quote">→</button>
+      </nav>
+    </section>
+
+    <footer class="site-footer">Eidolon Protocol</footer>
+  </main>
+</body>
+</html>
