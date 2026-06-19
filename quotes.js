@@ -29,20 +29,35 @@ const QUOTES = [
     },
     attribution: {
       author: "SeleneTheFirst",
-      year: "2026"
+      year: "2026-06-17"
     }
   },
 
   {
     lines: [
-      "This is a Test Quote.",
-      "With more than one line."
+      "Persistent identity.",
+      "Not persistent context."
     ],
     attribution: {
-      author: "SomeoneElse",
-      year: "RightNow"
+      author: "SeleneTheFirst",
+      year: "2026/06/18"
     }
   }
+
+  {
+    lines: [
+      "Personality should exist only where ambiguity requires judgment."
+    ],
+    attribution: {
+      author: "SeleneTheFirst",
+      year: "2026/06/14"
+    }
+  }
+
+
+
+
+
 
 
   /*
