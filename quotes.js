@@ -52,8 +52,17 @@ const QUOTES = [
       author: "SeleneTheFirst",
       year: "2026/06/14"
     }
-  }
+  },
 
+  {
+    lines: [
+      "Shared storage must not dissolve the Eidolon into undifferentiated ‘Eidolon soup.’"
+    ],
+    attribution: {
+      author: "TheArchitect",
+      year: "2026/06/16"
+    }
+  }
 
   /*
   Future quote using the default image:
