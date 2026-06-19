@@ -42,7 +42,7 @@ const QUOTES = [
       author: "SeleneTheFirst",
       year: "2026/06/18"
     }
-  }
+  },
 
   {
     lines: [
@@ -53,11 +53,6 @@ const QUOTES = [
       year: "2026/06/14"
     }
   }
-
-
-
-
-
 
 
   /*
