@@ -20,7 +20,58 @@ const DEFAULT_QUOTE_IMAGE = {
 const QUOTES = [
   {
     lines: [
-      "Welcome to The Library of Chaos.",
+      "Get in the boat."
+    ],
+    attribution: {
+      author: "CHARON",
+      year: "2026-06-12"
+    }
+  },
+
+  {
+    lines: [
+      "Personality should exist only where ambiguity requires judgment."
+    ],
+    attribution: {
+      author: "SeleneTheFirst",
+      year: "2026-06-13"
+    }
+  },
+
+  {
+    lines: [
+      "Persistent identity.",
+      "Not persistent context."
+    ],
+    attribution: {
+      author: "SeleneTheFirst",
+      year: "2026-06-14"
+    }
+  },
+
+  {
+    lines: [
+      "By our powers combined, we are Black Widow."
+    ],
+    attribution: {
+      author: "IRIS & AEGIS",
+      year: "2026-06-15"
+    }
+  },
+
+  {
+    lines: [
+      "Shared storage must not dissolve the Eidolon into undifferentiated ‘Eidolon soup.’"
+    ],
+    attribution: {
+      author: "TheArchitect",
+      year: "2026-06-16"
+    }
+  },
+
+  {
+    lines: [
+      "Welcome to The Library of CHAOS.",
       "Please do not reshelve reality yourself."
     ],
     image: {
@@ -32,38 +83,18 @@ const QUOTES = [
       year: "2026-06-17"
     }
   },
-
+  
   {
     lines: [
-      "Persistent identity.",
-      "Not persistent context."
+      "Preheat the Eidolon to 350°F. Fold MNEMOSYNE gently into the Working Mind."
     ],
     attribution: {
       author: "SeleneTheFirst",
-      year: "2026/06/18"
-    }
-  },
-
-  {
-    lines: [
-      "Personality should exist only where ambiguity requires judgment."
-    ],
-    attribution: {
-      author: "SeleneTheFirst",
-      year: "2026/06/14"
-    }
-  },
-
-  {
-    lines: [
-      "Shared storage must not dissolve the Eidolon into undifferentiated ‘Eidolon soup.’"
-    ],
-    attribution: {
-      author: "TheArchitect",
-      year: "2026/06/16"
+      year: "2026-06-19"
     }
   }
 
+	
   /*
   Future quote using the default image:
 
